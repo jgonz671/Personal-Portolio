@@ -1,0 +1,14 @@
+.experience-details {
+    margin: 20px;
+  }
+  
+  .experience-details h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience-details p {
+    color: #b9b7b7;
+    margin-bottom: 8px;
+  }
