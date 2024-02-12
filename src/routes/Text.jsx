@@ -8,7 +8,7 @@ function Text(){
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("My name is Julian Gonzalez")
+                .typeString("My name is Julian Gonzalez.")
                 .pauseFor(1000)
                 .start()
             }}
