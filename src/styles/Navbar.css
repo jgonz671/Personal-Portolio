@@ -10,8 +10,8 @@ nav {
   
   .navbar-container {
     display: flex;
-    justify-content: space-between; /* Positions children (ul) on opposite ends */
-    width: 100%; /* Ensures container uses full width of nav */
+    justify-content: space-between; 
+    width: 100%; 
     max-width: 1375px; 
     margin: 0 auto; 
   }

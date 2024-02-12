@@ -1,0 +1,19 @@
+.contact-form {
+    margin: 20px;
+  }
+  
+  .contact-form label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form a {
+    color: #b7bbbe; 
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form a:hover {
+    text-decoration: underline; 
+  }

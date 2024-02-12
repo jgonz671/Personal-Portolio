@@ -1,0 +1,14 @@
+.project-details {
+    margin: 20px;
+  }
+  
+  .project-details h2 {
+    color: #f8f8f8;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-details p {
+    color: #b9b7b7;
+    margin-bottom: 8px;
+  }
