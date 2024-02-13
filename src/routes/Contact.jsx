@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 function Contact() {
+  
   const form = useRef();
 
   const sendEmail = (e) => {
