@@ -1,14 +1,99 @@
-.project-details {
-    margin: 20px;
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.github-mark-container {
+  text-align: center; 
+  margin-top: auto; 
+}
+
+.github-mark {
+  display: block;
+  margin-top: 10px;
+  width: 35px; 
+  height: auto;
+  align-self: center; 
+  transition: transform 0.3s ease;
+}
+
+.project-card {
+  background-color: #f9f9f9; 
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: calc(33% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.2s; 
+}
+
+.project-card:hover {
+  transform: scale(1.05); 
+}
+
+.github-mark:hover {
+  transform: scale(1.2); /* Scales the logo up on hover */
+}
+
+.project-card h2 {
+  margin-top: 0;
+}
+
+.project-card p {
+  color: #333;
+}
+
+.project-languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 15px;
+  width: 100%; 
+}
+
+.language {
+  display: inline-flex;
+  background-color: #e0e0e0; 
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 2px; 
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px);
   }
-  
-  .project-details h2 {
-    color: #f8f8f8;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;
   }
-  
-  .project-details p {
-    color: #b9b7b7;
-    margin-bottom: 8px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.run-animation {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+

@@ -4,16 +4,21 @@ import Typewriter from "typewriter-effect";
 
 function Home(){
 
-    return <div className="typewriter-container">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("My name is Julian Gonzalez.")
-                .pauseFor(1000)
-                .start()
-            }}
-          />
-    </div>;
+  return <div className="typewriter-container">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .changeDelay(60)
+              .typeString("Julian Gonzalez.")
+              .pauseFor(250)
+              .typeString("<br>")
+              .pauseFor(250)
+              .typeString("Full Stack Developer.")
+              .start()
+          }}
+        />
+  </div>;
+
 }
 
 export default Home; 

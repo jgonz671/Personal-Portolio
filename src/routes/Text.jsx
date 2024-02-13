@@ -8,8 +8,12 @@ function Text(){
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("My name is Julian Gonzalez.")
-                .pauseFor(1000)
+                .changeDelay(60)
+                .typeString("Julian Gonzalez.")
+                .pauseFor(250)
+                .typeString("<br>")
+                .pauseFor(250)
+                .typeString("Full Stack Developer.")
                 .start()
             }}
           />

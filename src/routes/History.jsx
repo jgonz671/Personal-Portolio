@@ -1,23 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState }  from 'react';
 import '../styles/History.css'; 
 
+
 function History() {
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  useEffect(() => {
+    setIsAnimated(true);
+  }, []);
+
+  const histories = [
+    {
+      title: "Computer Science Startup Bootcamp, Tokyo",
+      description: "Participated in an immersive study abroad program in Tokyo, focused on bridging web development and entrepreneurship in computing. The program equipped me with comprehensive web development skills, including the use of modern tools and frameworks. Concurrently, I gained hands-on experience in technology entrepreneurship, covering ideation, market validation, and MVP development.",
+      dates: ["Aug 2023", "Sep 2023"],
+    },
+    {
+      title: "Subsitute Teacher - VVUSD",
+      description: "Licensed to instruct classrooms K-12 including special education. Specialized to instruct computer science and math related courses in upper grades. ",
+      dates: ["Sep 2023", "Present"],
+    },
+    {
+      title: "Online Grocery Pickup Associate - Walmart",
+      description: "Responsible for timely orders and deliveries to customers through effective teamwork. Assisted customers with knowledgeable support throughout every part of the store. Maintained track of various orders and products to prevent loss of cash assets. Enlisted a large mobile network used to track inventory, assist customers in real-time, and effectively complete orders. Answered phone calls daily concerning customer complaints and questions; aided in customer service and communication skills",
+      dates: ["June 2022", "Nov 2022"],
+    },
+    {
+      title: "Fullfillment Center Associate - Amazon",
+      description: "Rigorous work environment fulfilling daily rates and quotas. High bar for customer service; responsible for customer satisfaction in the delivery of packages. Learned to effectively communicate with hundreds of other associates to maximize product efficiency. Familiarized with multiple mechanical objects. Practiced safety procedures around potentially hazardous equipment while handling product.",
+      dates: ["June 2021", "Oct 2022"],
+    },
+  ];
+
   return (
-    <div className="experience-details">
-      <h2>Substitute Teacher</h2>
-      <p>Licensed to substitute classrooms K-12 and special education.</p>
-
-      <h2>Online Grocery Pickup Associate</h2>
-      <p>Coordinated prompt customer orders and deliveries through team collaboration with expert customer support throughout the store and online pickup.</p>
-      <p>Averaged item pick rate of 140 items per hour decreasing customer wait times by 20% in online pickup.</p>
-      <p>Utilized mobile network tools for real-time inventory management and customer assistance.</p>
-      <p>Handled daily customer queries and complaints in person and via phone enhancing customer service skills.</p>
-
-      <h2>Fulfillment Center Associate</h2>
-      <p>Physically rigorous work environment enlisting heavy lifting and fulfilling daily quotas.</p>
-      <p>Responsible for customer satisfaction in the delivery of packages.</p>
-      <p>Learned to effectively communicate with hundreds of other associates to maximize product efficiency.</p>
-      <p>Practiced safety procedures around potentially hazardous equipment while handling product.</p>
+    <div className="history-container">
+      {histories.map((history, index) => (
+        <div key={index} className={`history-card ${isAnimated ? 'run-animation' : ''}`}>
+          <h2>{history.title}</h2>
+          <p>{history.description}</p>
+          <div className="history-dates">
+          <span className="date">{history.dates.join(' - ')}</span>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
