@@ -38,8 +38,12 @@ nav {
     transition: color 0.3s; 
   }
   
-  a:hover {
+  .navigation-links a:hover {
     color: #c9aa53; 
+  }
+
+  .social-links a:hover {
+    color: #53a0c9; 
   }
   
   ul li:hover ~ .cursor {

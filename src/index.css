@@ -77,9 +77,9 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+  /* a:hover {
+    color: #fff374;
+  } */
   button {
     background-color: #f9f9f9;
   }
