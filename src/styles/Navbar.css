@@ -15,6 +15,12 @@ nav {
     max-width: 1375px; 
     margin: 0 auto; 
   }
+
+  .social-links, .navigation-links {
+    list-style-type: none;
+    display: flex;
+    padding: 0; 
+  }
   
   .social-links, .navigation-links {
     list-style-type: none;
@@ -38,12 +44,8 @@ nav {
     transition: color 0.3s; 
   }
   
-  .navigation-links a:hover {
-    color: #c9aa53; 
-  }
-
-  .social-links a:hover {
-    color: #53a0c9; 
+  a:hover {
+    color: white; 
   }
   
   ul li:hover ~ .cursor {
