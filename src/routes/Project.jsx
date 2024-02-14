@@ -19,7 +19,7 @@ function Project() {
     {
       title: "Labyrinth Looter",
       description: "Terminal-based RPG game that traverses through a dynamically generated dungeon.",
-      languages: ["C++", "Valgrind", "Google Test", "Valgrind"],
+      languages: ["C++", "Valgrind", "Google Test", "HTML"],
       githubLink: "https://github.com/jgonz671/Labyrinth-Looter1"
     },
     {
