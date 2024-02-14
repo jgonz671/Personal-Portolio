@@ -1,10 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 function Contact() {
-  
+  const [isAnimated, setIsAnimated] = useState(false);
   const form = useRef();
+
+  useEffect(() => {
+    setIsAnimated(true);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,7 +25,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className={`contact-container ${isAnimated ? 'run-animation' : ''}`}>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <label htmlFor="user_name">Name:</label>
         <input type="text" id="user_name" name="user_name" required />

@@ -19,18 +19,33 @@
 .contact-form input, .contact-form textarea, .contact-form button {
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ffffff;
+  border: none;
   background-color: white;
   color: black;
 }
 
 .contact-form button {
   cursor: pointer;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.255);
   color: white;
   transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-  background-color: #333;
+  background-color: #ffffff6c;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.run-animation {
+  animation: fadeInUp 0.5s ease-out forwards;
 }

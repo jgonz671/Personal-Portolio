@@ -5,12 +5,7 @@
   padding: 20px;
 }
 
-.github-mark-container {
-  text-align: center; 
-  margin-top: auto; 
-}
-
-.github-mark {
+.project-icon {
   display: block;
   margin-top: 10px;
   width: 35px; 
@@ -20,7 +15,7 @@
 }
 
 .project-card {
-  background-color: #f9f9f9; 
+  background-color: #fdfdfde5; 
   color: #000;
   display: flex;
   flex-direction: column;
@@ -34,12 +29,22 @@
   transition: transform 0.2s; 
 }
 
-.project-card:hover {
-  transform: scale(1.05); 
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  margin-top: auto; 
+  text-align: center; 
 }
 
-.github-mark:hover {
-  transform: scale(1.2); /* Scales the logo up on hover */
+
+.project-icon:hover {
+  transform: scale(1.2); 
+}
+
+.project-card:hover {
+  transform: scale(1.1); 
 }
 
 .project-card h2 {
