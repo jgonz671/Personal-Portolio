@@ -1,5 +1,6 @@
 import React, { useEffect, useState }  from 'react';
 import githubMark from '../img/github-mark.png'
+import websiteMark from '../img/website-mark.png'
 import '../styles/Project.css';
 
 function Project() {
@@ -14,12 +15,13 @@ function Project() {
       title: "Rubbish Radar",
       description: "Web application designed to display user-located waste disposal (trash can) points on an interactive map.",
       languages: ["JavaScript", "Vue.js", "Node.js", "CSS", "HTML", "Firebase", "Firebase OAuth"],
-      githubLink: "https://github.com/jgonz671/Rubbish-Radar"
+      githubLink: "https://github.com/jgonz671/Rubbish-Radar",
+      websiteLink: "https://rubbishradar-695ae.web.app"
     },
     {
       title: "Labyrinth Looter",
       description: "Terminal-based RPG game that traverses through a dynamically generated dungeon.",
-      languages: ["C++", "Valgrind", "Google Test", "Valgrind"],
+      languages: ["C++", "Valgrind", "Google Test", "HTML"],
       githubLink: "https://github.com/jgonz671/Labyrinth-Looter1"
     },
     {
@@ -41,10 +43,15 @@ function Project() {
               <span key={idx} className="language">{language}</span>
             ))}
           </div>
-          <div className="github-mark-container">
+          <div className="project-links">
           <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-            <img src={githubMark} alt="GitHub Link" className="github-mark" />
+            <img src={githubMark} alt="GitHub Link" className="project-icon" />
           </a>
+          {project.websiteLink && (
+              <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">
+                <img src={websiteMark} alt="Website Link" className="project-icon" />
+              </a>
+            )}
           </div>
         </div>
       ))}
