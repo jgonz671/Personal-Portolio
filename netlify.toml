@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://gamingtechreviewer.com/*"
+  to = "https://www.pctechreviewer.com/"
+  status = 301
+  force = true
