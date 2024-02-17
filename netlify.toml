@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://gamingtechreviewer.com/*"
-  to = "https://www.pctechreviewer.com/"
+  from = "https://jgonz.me/*"
+  to = "https://jgonz.netlify.app/"
   status = 301
   force = true
