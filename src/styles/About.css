@@ -20,6 +20,7 @@
         height: 320px;
         object-fit: cover;
         border-radius: 20px;
+        transition: transform  0.3s ease;
 }
 
 @media (max-width:  768px) {
@@ -31,10 +32,6 @@
             width:  200px; 
             height:  200px;
         }
-    }
-
-    .profile-pic {
-        transition: transform  0.3s ease;
     }
     
     .profile-pic:hover {
