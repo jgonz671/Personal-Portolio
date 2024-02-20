@@ -4,6 +4,7 @@
   justify-content: space-around;
   padding: 20px;
   overflow: auto; 
+  transition: transform  0.3s ease;
 }
 
 .history-card {
@@ -19,10 +20,6 @@
   width: calc(33% - 20px);
   box-sizing: border-box;
   transition: transform 0.2s; 
-}
-
-.history-card:hover {
-  transform: scale(1.05); 
 }
 
 .history-card h2 {

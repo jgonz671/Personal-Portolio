@@ -38,5 +38,5 @@
     }
     
     .profile-pic:hover {
-        transform: scale(1.05); /* Slightly enlarge the picture on hover */
+        transform: scale(1.05); 
     }
