@@ -14,7 +14,7 @@ function Project() {
     {
       title: "Rubbish Radar",
       description: "Web application designed to display user-located waste disposal (trash can) points on an interactive map.",
-      languages: ["JavaScript", "Vue.js", "Node.js", "CSS", "HTML", "Firebase", "Firebase OAuth"],
+      languages: ["JavaScript", "Vue.js", "Node.js", "CSS", "HTML", "Google Maps API", "Firebase", "Firebase OAuth"],
       githubLink: "https://github.com/jgonz671/Rubbish-Radar",
       websiteLink: "https://rubbishradar-695ae.web.app"
     },

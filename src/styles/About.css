@@ -1,0 +1,42 @@
+.about-content {
+        text-align: center;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+}
+
+.about-content h1 {
+        margin-bottom: 10px;
+        font-family: Helvetica, Arial, sans-serif;
+}
+
+.about-content p{
+        font-size: 1.1rem; 
+        color: #fdfdfde5; 
+}
+
+.profile-pic {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 20px;
+}
+
+@media (max-width:  768px) {
+        .about-content {
+            max-width:  100%; 
+        }
+    
+        .profile-pic {
+            width:  200px; 
+            height:  200px;
+        }
+    }
+
+    .profile-pic {
+        transition: transform  0.3s ease;
+    }
+    
+    .profile-pic:hover {
+        transform: scale(1.05); /* Slightly enlarge the picture on hover */
+    }
