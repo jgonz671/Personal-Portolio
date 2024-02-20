@@ -1,0 +1,35 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:   20px;
+    position: relative;
+  }
+  
+  .profile-pic {
+    width:   200px;
+    height:   200px;
+    border-radius:   50%;
+    object-fit: cover;
+    margin-bottom:   20px;
+  }
+  
+  .about-content {
+    text-align: center;
+  }
+  
+  .about-content h1 {
+    font-size:   2em;
+    margin-bottom:   10px;
+  }
+  
+  .about-content p {
+    font-size:   1em;
+    color: #333;
+  }
+  
+
+  /* I'm an undergraduate student at UCR studying computer engineering. With a curiosity that doesn't seem to die, 
+  I'm always interested in discovering and learning about new things. I aspire to advance my career in technology
+  through different learning opportunities. For any business inquires,
+  shoot me an email through the contact page or the email on my resume. Feel free to stay a while.  */
