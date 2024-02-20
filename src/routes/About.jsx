@@ -1,5 +1,5 @@
 import React from 'react';
-import githubMark from '../img/github-mark.png';
+import profilePic from '../img/profile-pic.png'
 import { useSpring, animated } from '@react-spring/web';
 import '../styles/About.css';
 
@@ -12,11 +12,15 @@ function About() {
   
     return (
       <animated.div className="about-container" style={animationProps}>
-        <img src={githubMark} alt="Profile Picture" className="profile-pic" />
+        <img src={profilePic} alt="Profile Picture" className="profile-pic" />
         <div className="about-content">
           <h1>Hi, I'm Julian.</h1>
-          <p>I'm a full-stack developer with a passion for creating intuitive and interactive web applications. I have experience in JavaScript, React, Node.js, and more.</p>
-          <p>In my free time, I enjoy exploring new technologies and contributing to open-source projects.</p>
+          <p>I'm an undergraduate student at UCR studying computer engineering. With a curiosity that doesn't seem to die, 
+            I'm always interested in discovering and learning about new things. I hope to advance my career in technology. 
+          </p>
+          <p>  
+            For any business inquires, shoot me an email through my contact page. Feel free to stay a while. :) 
+          </p>
         </div>
       </animated.div>
     );
