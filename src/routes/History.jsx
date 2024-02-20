@@ -1,6 +1,5 @@
 import React, { useEffect, useState }  from 'react';
-import '../styles/History.css'; 
-
+import '../styles/History.css';  
 
 function History() {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -32,14 +31,17 @@ function History() {
     },
   ];
 
+
   return (
     <div className="history-container">
       {histories.map((history, index) => (
-        <div key={index} className={`history-card ${isAnimated ? 'run-animation' : ''}`}>
-          <h2>{history.title}</h2>
-          <p>{history.description}</p>
-          <div className="history-dates">
-          <span className="date">{history.dates.join(' - ')}</span>
+        <div key={index} className={`${isAnimated ? 'history-wrapper run-animation' : 'history-wrapper'}`}>
+          <div className="history-card">
+            <h2>{history.title}</h2>
+            <p>{history.description}</p>
+            <div className="history-dates">
+              <span className="date">{history.dates.join(' - ')}</span>
+            </div>
           </div>
         </div>
       ))}

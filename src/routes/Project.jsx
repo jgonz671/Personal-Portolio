@@ -35,28 +35,30 @@ function Project() {
   return (
     <div className="projects-container">
       {projects.map((project, index) => (
-        <div key={index} className={`project-card ${isAnimated ? 'run-animation' : ''}`}>
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-          <div className="project-languages">
-            {project.languages.map((language, idx) => (
-              <span key={idx} className="language">{language}</span>
-            ))}
-          </div>
-          <div className="project-links">
-          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-            <img src={githubMark} alt="GitHub Link" className="project-icon" />
-          </a>
-          {project.websiteLink && (
-              <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">
-                <img src={websiteMark} alt="Website Link" className="project-icon" />
+        <div key={index} className={`${isAnimated ? 'project-wrapper run-animation' : 'project-wrapper'}`}>
+          <div className="project-card">
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+            <div className="project-languages">
+              {project.languages.map((language, idx) => (
+                <span key={idx} className="language">{language}</span>
+              ))}
+            </div>
+            <div className="project-links">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <img src={githubMark} alt="GitHub Link" className="project-icon" />
               </a>
-            )}
+              {project.websiteLink && (
+                <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">
+                  <img src={websiteMark} alt="Website Link" className="project-icon" />
+                </a>
+              )}
+            </div>
           </div>
         </div>
       ))}
     </div>
   );
-}
+} 
 
 export default Project;

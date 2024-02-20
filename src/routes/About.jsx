@@ -19,7 +19,7 @@ function About() {
             I'm always interested in discovering and learning about new things. I hope to advance my career in technology. 
           </p>
           <p>  
-            For any business inquires, shoot me an email through my contact page. Feel free to stay a while. :) 
+            For any business inquires, shoot me an email through my contact page, or @julian.eg2003@gmail.com. Feel free to stay a while. :) 
           </p>
         </div>
       </animated.div>
