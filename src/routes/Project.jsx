@@ -27,7 +27,7 @@ function Project() {
     {
       title: "Home Security System",
       description: "Home security system designed to alert users of motion detection.",
-      languages: ["C++", "C", "Arduino Uno R3, Arduino IDE"],
+      languages: ["C++", "C", "Arduino Uno R3", "Arduino IDE"],
       githubLink: "https://github.com/jgonz671/Home-Security-System"
     }
   ];
