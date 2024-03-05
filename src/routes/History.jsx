@@ -16,7 +16,7 @@ function History() {
     },
     {
       title: "Subsitute Teacher - VVUSD",
-      description: "Certfified to instruct classes K-12 and special education. Specialized in tutoring math and computer science (Javascript, Python) for middle and high school students. Developed engaging lesson plans for object-oriented programming and web development concepts leading to a 20% increase in student project completion and a demonstrated understanding of core principles. Mentored individual students with learning difficulties resulting in improved problem-solving skills and increased confidence in their coding abilities. ",
+      description: "Certfified to instruct classes K-12 and special education. Specialized in tutoring math and computer science for middle and high school students including topics in object-oriented programming and web development. Mentored individual students with learning difficulties.",
       dates: ["Sep 2023", "Present"],
     },
     {

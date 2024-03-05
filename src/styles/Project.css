@@ -107,6 +107,6 @@
 }
 
 .run-animation {
-  animation: fadeInUp 2s ease-out forwards;
+  animation: fadeInUp 1.25s ease-out forwards;
 }
 
