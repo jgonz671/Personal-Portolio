@@ -1,4 +1,4 @@
-import React, { useEffect, useState }  from 'react';
+import React, { useEffect, useState } from 'react';
 import githubMark from '../img/github-mark.png'
 import websiteMark from '../img/website-mark.png'
 import '../styles/Project.css';
@@ -29,7 +29,14 @@ function Project() {
       description: "Home security system designed to alert users of motion detection.",
       languages: ["C++", "C", "Arduino Uno R3", "Arduino IDE"],
       githubLink: "https://github.com/jgonz671/Home-Security-System"
-    }
+    },
+    {
+      title: "Nomad Notifier",
+      description: "Web application to implement a travel planner allowing users to create and manage trips.",
+      languages: ["JavaScript", "React", "Node.js", "HTML", "CSS", "Jest"],
+      githubLink: "https://github.com/FutureBrainn/NomadNotifier",
+      websiteLink: "https://nomadnotifier-fecce.web.app/",
+    },
   ];
 
   return (
@@ -59,6 +66,6 @@ function Project() {
       ))}
     </div>
   );
-} 
+}
 
 export default Project;
