@@ -9,11 +9,11 @@ function History() {
   }, []);
 
   const histories = [
-    {
-      title: "Software Engineering Intern - PENNYMAC",
-      description: "Incoming software engineering intern specializing in application development for marketing and sales. Will be working with a team of developers to create and maintain applications that support the company's marketing and sales initiatives.",
-      dates: ["Summer", "2024"],
-    },
+    // {
+    //   title: "Software Engineering Intern - PENNYMAC",
+    //   description: "Incoming software engineering intern specializing in application development for marketing and sales. Will be working with a team of developers to create and maintain applications that support the company's marketing and sales initiatives.",
+    //   dates: ["Summer", ""],
+    // },
     {
       title: "Computer Science Startup Bootcamp, Tokyo",
       description: "Participated in an immersive study abroad program in Tokyo, focused on bridging web development and entrepreneurship in computing. The program equipped me with comprehensive web development skills, including the use of modern tools and frameworks. Concurrently, I gained hands-on experience in technology entrepreneurship, covering ideation, market validation, and MVP development.",
