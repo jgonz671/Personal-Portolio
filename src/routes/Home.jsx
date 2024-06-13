@@ -13,7 +13,7 @@ function Home(){
               .pauseFor(250)
               .typeString("<br>")
               .pauseFor(250)
-              .typeString("Software Engineer.")
+              .typeString("Software Engineering.")
               .start()
           }}
         />
